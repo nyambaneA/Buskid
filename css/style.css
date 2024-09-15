@@ -1379,3 +1379,39 @@ FUN FACTS
     /* background-color: purple; */
 
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.contact-info .label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.contact-info a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
