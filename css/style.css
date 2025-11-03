@@ -1470,3 +1470,258 @@ body {
     left: 0;
     font-weight: bold;
 }
+
+/* Compact Slideshow Styles */
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide-title {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+}
+
+.slide-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.mission-vision {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.mission, .vision {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3, .vision h3 {
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.value-card-slide {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 3px solid var(--primary);
+}
+
+.value-card-slide h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.service-item {
+    background: var(--primary);
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-3px);
+    background: var(--accent);
+}
+
+.programs-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.programs-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+    position: relative;
+    padding-left: 25px;
+    font-size: 0.95rem;
+}
+
+.programs-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.partner-logo {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: var(--primary);
+}
+
+.table-sm th,
+.table-sm td {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+}
+
+.mt-1 { margin-top: 0.25rem !important; }
+.mt-2 { margin-top: 0.5rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+
+/* Mobile optimizations */
+@media (max-width: 767.98px) {
+    .slide {
+        padding: 15px;
+    }
+    
+    .slide-title {
+        font-size: 1.5rem;
+    }
+    
+    .mission-vision {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .service-item {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+    
+    .programs-list li {
+        font-size: 0.9rem;
+        padding: 6px 0;
+        padding-left: 22px;
+    }
+    
+    .partners {
+        gap: 10px;
+    }
+    
+    .partner-logo {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .nav-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}

@@ -429,6 +429,232 @@
             margin-top: 50px;
         }
         
+        /* Company Profile Slideshow Styles */
+        .slideshow-container {
+            position: relative;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .slide-title {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+        }
+
+        .slide-content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .mission-vision {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .mission, .vision {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission h3, .vision h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .value-card-slide {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--primary);
+        }
+
+        .value-card-slide h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .service-item {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            background: var(--accent);
+        }
+
+        .programs-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .programs-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #ddd;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .programs-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .partner-logo {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .nav-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-btn:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .dots-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .dot.active {
+            background: var(--primary);
+        }
+        
+        /* Download Button Styles */
+        .download-section {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        
+        .download-btn {
+            background: white;
+            color: var(--primary);
+            border: none;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            color: var(--primary-dark);
+        }
+        
+        .download-icon {
+            font-size: 1.3rem;
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 991.98px) {
             .hero-content h1 {
@@ -459,6 +685,27 @@
             
             .section-title h2 {
                 font-size: 1.75rem;
+            }
+            
+            .slide {
+                padding: 20px;
+            }
+            
+            .mission-vision {
+                flex-direction: column;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .download-btn {
+                padding: 12px 25px;
+                font-size: 1rem;
             }
         }
     </style>
@@ -615,8 +862,269 @@
     </section>
     <!-- About Section End -->
 
+    <!-- Download Profile Section -->
+    <section class="download-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Download Our Company Profile</h2>
+                    <p class="mb-4">Get the complete BuzzKid Group Limited company profile in PDF format. Share it with partners, clients, or keep it for your reference.</p>
+                    <button class="download-btn" id="downloadProfileBtn">
+                        <i class="fas fa-download download-icon"></i>
+                        Download Company Profile (PDF)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Company Profile Slideshow Start -->
+<section class="py-3 bg-light">
+    <div class="container py-3">
+        <div class="section-title text-center mb-4">
+            <span class="sub-title">COMPANY PROFILE</span>
+            <h2 class="mb-3">Discover BuzzKid Group Limited</h2>
+            <p class="mb-0">Learn more about our mission, vision, values, and comprehensive services</p>
+        </div>
+        
+        <div class="slideshow-container">
+            <div class="slides">
+                <!-- Slide 1: Executive Summary -->
+                <div class="slide">
+                    <h2 class="slide-title">Executive Summary</h2>
+                    <div class="slide-content">
+                        <p><strong>Buzzkid Group Limited</strong> is a leading sports and wellness-oriented firm based in Nairobi, Kenya. The company is established with a mission to empower individuals through sports and has made significant strides in promoting sustainable life survival skills, with a particular focus on swimming.</p>
+                        <p>The company's programs are designed to cater to individuals of all ages and abilities, offering a unique blend of physical activity and holistic wellness. Buzzkid Group Limited is registered as a limited liability company in the Republic of Kenya.</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Mission & Vision -->
+                <div class="slide">
+                    <h2 class="slide-title">Our Mission & Vision</h2>
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h3>Our Mission</h3>
+                            <p>To empower individuals of all ages with life-enhancing skills through sports and wellness programs, promoting a culture of health, safety, and confidence in and around water.</p>
+                        </div>
+                        <div class="vision">
+                            <h3>Our Vision</h3>
+                            <p>To be the leading global enterprise in sports and wellness, pioneering sustainable solutions that empower individuals and create enduring human excellence.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Core Values -->
+                <div class="slide">
+                    <h2 class="slide-title">Our Core Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card-slide">
+                            <h3>Discipline</h3>
+                            <p>We believe discipline is the foundation of progress — both in and out of the pool. Every training, attendance, and performance reflects personal responsibility, time management, and respect for structure.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Commitment</h3>
+                            <p>We uphold consistency and dedication. Our swimmers, coaches, and partners commit to continuous growth, goal setting, and accountability in achieving both personal and team milestones.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Safety</h3>
+                            <p>The safety of every swimmer comes first. From beginners to advanced athletes, we maintain a culture of vigilance, certified supervision, and adherence to professional aquatic safety standards.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Excellence</h3>
+                            <p>We pursue excellence in coaching, technique, and character. Every session is designed to bring out the best version of each swimmer — physically, mentally, and emotionally.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Inclusion</h3>
+                            <p>We believe swimming is for everyone. Our programs embrace diversity and accessibility, ensuring every child, regardless of background or ability, has an opportunity to learn and grow through swimming.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Passion</h3>
+                            <p>We do more than teach swimming — we ignite a lifelong love for the water. Our passion drives innovation, creativity, and joy in every Buzzkid Aquatics experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 4: Sports Services -->
+                <div class="slide">
+                    <h2 class="slide-title">Sports and Wellness Services</h2>
+                    <div class="services-grid">
+                        <div class="service-item">Swimming</div>
+                        <div class="service-item">Skating</div>
+                        <div class="service-item">Football</div>
+                        <div class="service-item">Chess</div>
+                        <div class="service-item">Basketball</div>
+                        <div class="service-item">Tennis</div>
+                    </div>
+                </div>
+                
+                <!-- Slide 5: Sports Management -->
+                <div class="slide">
+                    <h2 class="slide-title">Sports Management Consultancy</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Service Area</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Sports Data Analytics</strong></td>
+                                    <td>Providing valuable insight using data analytics to understand fan preferences and acquire the right players.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Player Pro</strong></td>
+                                    <td>Offering insights about players' performance and team management processes with real-time analytics.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Business Development</strong></td>
+                                    <td>Advising sports business leaders on how to profitably grow their businesses and resolve pressing strategic questions.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Athlete Management</strong></td>
+                                    <td>A custom approach to creating a personal experience, assisting, consulting, and advising athletes as individuals.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Facility Construction</strong></td>
+                                    <td>The construction division creates model alignment of sports facilities, according to a client's vision to maximize the impact on their business.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Event Management</strong></td>
+                                    <td>Developing unique activation opportunities that engage with target audiences, placing clients at the heart of the event.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Slide 6: Aquatics Club -->
+                <div class="slide">
+                    <h2 class="slide-title">Buzzkid Aquatics Club & Swim School</h2>
+                    <div class="slide-content">
+                        <p><strong>(Registered with Sports Kenya)</strong></p>
+                        <p>Buzzkid Aquatics Club is a registered swimming and aquatics training institution dedicated to building water safety, skill, and excellence in swimming. The swim school operates across multiple venues, including Syokimau, Hillpark, Heron, and Concord. It is registered with Sports Kenya as an official swimming club.</p>
+                        
+                        <h3 class="mt-3 text-primary">Program Offerings</h3>
+                        <h4 class="mt-2 text-accent">For Individuals & Families</h4>
+                        <ul class="programs-list">
+                            <li>Learn-to-Swim Programs: Beginner-friendly lessons for all ages</li>
+                            <li>Specialized Programs: Includes Parent & Toddler lessons, adult fitness swimming, and aqua therapy</li>
+                            <li>Stroke Development & Technique Training</li>
+                            <li>Competitive Pathways: Advanced training for swimmers targeting competitions</li>
+                            <li>Flexible Pack System: Sessions are offered in renewable packs of 10 for convenience and accountability</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Slide 7: Specific Programs -->
+                <div class="slide">
+                    <h2 class="slide-title">Specific Swimming Programmes</h2>
+                    <div class="services-grid">
+                        <div class="service-item">Survival Skills</div>
+                        <div class="service-item">Learn To Swim</div>
+                        <div class="service-item">Competitive Swimming</div>
+                        <div class="service-item">Stroke Perfection</div>
+                        <div class="service-item">Aquarobics / Workout</div>
+                        <div class="service-item">Hydrotherapy</div>
+                        <div class="service-item">Special Needs</div>
+                    </div>
+                    
+                    <div class="mt-3">
+                        <h3 class="text-accent">For Schools & Institutions</h3>
+                        <ul class="programs-list">
+                            <li>School Swim Programs: Weekly or term-based swimming lessons integrated into the school timetable</li>
+                            <li>CCSE Swimming Curriculum & CBC Swimming Curriculum</li>
+                            <li>Heated Pool and Cold Pool access</li>
+                            <li>Group Package (Class of 30-40)</li>
+                            <li>Professional Coaches</li>
+                            <li>After-School Swim Clubs: Structured sessions for interested students</li>
+                            <li>Swimming Galas & Assessments: Termly/annual events to showcase progress and encourage competition</li>
+                            <li>Teacher & Staff Training: Water safety, basic lifeguard skills, and teacher orientation</li>
+                            <li>Venue Partnerships: Collaborations with schools that want to set up or enhance their swimming facilities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Slide 8: Value Proposition -->
+                <div class="slide">
+                    <h2 class="slide-title">Our Value Proposition</h2>
+                    <div class="values-grid">
+                        <div class="value-card-slide">
+                            <h3>Qualified Coaches</h3>
+                            <p>Experienced and certified instructors ensuring safety and progress.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Progress Tracking</h3>
+                            <p>Regular assessments, progress reports, and swim level certifications.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Multiple Venues</h3>
+                            <p>Accessible pools across Syokimau, Hillpark, Heron, Concord, and more.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Partnership with Schools</h3>
+                            <p>A structured and professional approach that eases school management workload.</p>
+                        </div>
+                        <div class="value-card-slide">
+                            <h3>Holistic Development</h3>
+                            <p>Promoting water safety, fitness, discipline, and confidence.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 9: Why Choose Buzzkid -->
+                <div class="slide">
+                    <h2 class="slide-title">Why Choose Buzzkid</h2>
+                    <ul class="programs-list">
+                        <li>Registered with Sports Kenya as an official swimming club.</li>
+                        <li>Proven track record with schools, families, and institutions.</li>
+                        <li>Structured curriculum aligned with international swim levels.</li>
+                        <li>Flexibility to serve different age groups, from toddlers to adults.</li>
+                        <li>Strong emphasis on safety, discipline, and enjoyment.</li>
+                    </ul>
+                    
+                    <h3 class="mt-3 text-primary text-center">Our Partners</h3>
+                    <div class="partners">
+                        <div class="partner-logo">REGIS SCHOOL</div>
+                        <div class="partner-logo">RUNDA KERYAN CLASSIC CULTURE</div>
+                        <div class="partner-logo">SABIS International School</div>
+                        <div class="partner-logo">KITENGELA INTERNATIONAL SCHOOLS</div>
+                        <div class="partner-logo">Kilele School</div>
+                    </div>
+                </div>
+                
+                <!-- Slide 10: Contact -->
+                <div class="slide">
+                    <h2 class="slide-title">Contact Us</h2>
+                    <div class="contact-info">
+                        <p>+254 725 320 998 | +254 113 709 867</p>
+                        <p>info@buzzkidsport.com</p>
+                        <p>Off Mombasa road at Muthama Access Road Syokimau</p>
+                        <p class="mt-2"><strong>www.buzzkidsport.com</strong></p>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h2 class="text-primary" style="font-size: 2rem;">BUZZKID SWIM SCHOOL</h2>
+                        <h3 class="text-accent mt-1">Making Waves Building Confidence</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-btn" id="prev-btn">Previous</button>
+            <button class="nav-btn" id="next-btn">Next</button>
+        </div>
+        
+        <div class="dots-container" id="dots-container">
+            <!-- Dots will be generated by JavaScript -->
+        </div>
+    </div>
+</section>
+<!-- Company Profile Slideshow End -->
+
     <!-- Values Section Start -->
-    <section class="py-5 bg-light">
+    <section class="py-5">
         <div class="container py-5">
             <div class="section-title text-center mb-5">
                 <span class="sub-title">OUR VALUES</span>
@@ -954,20 +1462,93 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+    <!-- Company Profile Slideshow Script -->
     <script>
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        
-        // Initialize carousel
-        var myCarousel = document.querySelector('#header-carousel')
-        var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 5000,
-            wrap: true
-        })
-        
-        // Remove spinner when page is loaded
-        window.addEventListener('load', function() {
-            document.getElementById('spinner').style.display = 'none';
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelector('.slides');
+            const slidesCount = document.querySelectorAll('.slide').length;
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const dotsContainer = document.getElementById('dots-container');
+            const downloadBtn = document.getElementById('downloadProfileBtn');
+            
+            let currentSlide = 0;
+            
+            // Create dots
+            for (let i = 0; i < slidesCount; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (i === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+            
+            const dots = document.querySelectorAll('.dot');
+            
+            function updateSlides() {
+                slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+            
+            function goToSlide(slideIndex) {
+                currentSlide = slideIndex;
+                if (currentSlide < 0) currentSlide = slidesCount - 1;
+                if (currentSlide >= slidesCount) currentSlide = 0;
+                updateSlides();
+            }
+            
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+            
+            function prevSlide() {
+                goToSlide(currentSlide - 1);
+            }
+            
+            prevBtn.addEventListener('click', prevSlide);
+            nextBtn.addEventListener('click', nextSlide);
+            
+            // Download Profile Button
+            downloadBtn.addEventListener('click', function() {
+                // Replace with the actual path to your PDF file
+                const pdfUrl = 'BUZZKID COMPANY PROFILE-3.pdf';
+                
+                // Create a temporary anchor element to trigger download
+                const link = document.createElement('a');
+                link.href = pdfUrl;
+                link.download = 'BuzzKid-Company-Profile.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Optional: Track download event for analytics
+                console.log('Company profile download initiated');
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') prevSlide();
+                if (e.key === 'ArrowRight') nextSlide();
+            });
+            
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Initialize carousel
+            var myCarousel = document.querySelector('#header-carousel')
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 5000,
+                wrap: true
+            })
+            
+            // Remove spinner when page is loaded
+            window.addEventListener('load', function() {
+                document.getElementById('spinner').style.display = 'none';
+            });
         });
     </script>
 </body>
