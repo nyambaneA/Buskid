@@ -1415,3 +1415,58 @@ body {
     color: #004499;
     text-decoration: underline;
 }
+
+/* Central Contact Styling */
+.central-contact {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) !important;
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.3);
+}
+
+.central-contact .contact-item {
+    padding: 20px;
+}
+
+.central-contact a:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-decoration: none;
+}
+
+.contact-info .label {
+    font-weight: 600;
+    min-width: 70px;
+    margin-right: 10px;
+    color: var(--primary);
+}
+
+/* Additional CSS for the updated pricing section */
+.rate-card-container {
+    border: 2px dashed var(--primary);
+    background: rgba(0, 102, 204, 0.03) !important;
+}
+
+.important-note {
+    background: rgba(255, 107, 53, 0.05) !important;
+    border-left: 4px solid var(--accent) !important;
+}
+
+.pricing-card .pricing-period {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.pricing-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+
+.pricing-features li:before {
+    content: "✓";
+    color: var(--success);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}

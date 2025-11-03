@@ -1,394 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
+    <meta charset="utf-8">
+    <title>Our Services - Buzzkid Group Ltd | Sports & Swimming Training</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="swimming lessons, sports training, athlete management, data analytics, business development" name="keywords">
+    <meta content="Discover Buzzkid Group's comprehensive sports services including swimming lessons, athlete management, sports analytics, and business development in Nairobi" name="description">
 
-        	<!-- Favicon -->
-        <link rel="icon" href="img/favicon (2).ico">
-        <meta charset="utf-8">
-        <title>Services - Our Focus</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        <!--UBUNTU FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-            rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon (2).ico">
 
-        <!-- Owl Carousel CSS -->
-	    <link rel="stylesheet" href="css/owl-carousel.css">
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-
+    <!-- Modern CSS Styles -->
+    <style>
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #0052a3;
+            --secondary: #00a8e8;
+            --accent: #ff6b35;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #28a745;
+        }
         
+        * {
+            box-sizing: border-box;
+        }
         
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-<style>
-
-
-/* Slider */ 
-.slick-slide {
-  margin: 0px 10px;
-  
-} 
-.slick-slide img {
-  width: 100%;
-}
-</style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .text-primary {
+            color: var(--primary) !important;
+        }
+        
+        .text-accent {
+            color: var(--accent) !important;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        
+        .bg-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        /* Header & Navigation */
+        .top-bar {
+            background-color: var(--dark);
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        
+        .top-bar a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .top-bar a:hover {
+            color: white;
+        }
+        
+        .navbar {
+            padding: 15px 0;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            transition: all 0.3s;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 8px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            color: var(--dark);
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary);
+            background-color: rgba(0, 102, 204, 0.05);
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/DSC_0335.JPG');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 80px;
+            color: white;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            justify-content: center;
+        }
+        
+        .breadcrumb-item a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: white;
+        }
+        
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Section Styling */
+        .section-title {
+            margin-bottom: 50px;
+        }
+        
+        .section-title .sub-title {
+            display: inline-block;
+            background-color: rgba(0, 102, 204, 0.1);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        /* Services Section */
+        .service-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            background: white;
+            margin-bottom: 30px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-img {
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 30px;
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 102, 204, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        
+        /* Service Details Section */
+        .service-detail-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .service-feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 102, 204, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 24px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .feature-content h4 {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        /* Process Section */
+        .process-section {
+            padding: 80px 0;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+        }
+        
+        .process-step:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -10%;
+            width: 20%;
+            height: 2px;
+            background: var(--primary);
+            z-index: 1;
+        }
+        
+        .process-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Clients Section */
+        .clients-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .client-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .client-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .client-logo img {
+            max-width: 100%;
+            max-height: 60px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        
+        .client-logo:hover img {
+            filter: grayscale(0%);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 80px 0 0;
+        }
+        
+        .footer h5 {
+            color: white;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 991.98px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .process-step:not(:last-child)::after {
+                display: none;
+            }
+            
+            .navbar-collapse {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                margin-top: 15px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.75rem;
+            }
+            
+            .service-content {
+                padding: 20px;
+            }
+        }
+    </style>
     
-    </head>
-<!--Start of Tawk.to Script-->
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/66e6271cea492f34bc13d40a/1i7pghj7v';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66e6271cea492f34bc13d40a/1i7pghj7v';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
-    <!--End of Tawk.to Script-->
+</head>
 
-    <body>
+<body>
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-orange" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
-
-
-
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-            <div class="row gx-0 align-items-center" style="height: 45px;">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+    <!-- Topbar Start -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
                     <div class="d-flex flex-wrap">
-                        <a href="#" class="text-light me-4" style="font-size: 13px;"><i class="fa fa-location-arrow text-orange me-2"></i>Kenya</a>
-                        <a href="#" class="text-light me-4" style="font-size: 13px;"><i class="fa fa-mobile text-orange me-2"></i>+254 725 320 998 </a>
-                        <a href="#" class="text-light me-0" style="font-size: 13px;"><i class="fa fa-envelope text-orange me-2"></i>info@buzzkidgroup.com</a>
+                        <a href="#" class="me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Nairobi, Kenya</a>
+                        <a href="tel:+254725320998" class="me-4"><i class="fas fa-phone text-primary me-2"></i>+254 725 320 998</a>
+                        <a href="mailto:info@buzzkidgroup.com"><i class="fas fa-envelope text-primary me-2"></i>info@buzzkidgroup.com</a>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
+                <div class="col-md-4 text-md-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Topbar End -->
-  
- <div class="d-flex align-items-center">
-  <a href="index.html" class="navbar-brand p-0">
-    <img class="logo img-fluid" src="img/buzzkidlogo.png" alt="Logo" style="height: 200px;">
-  </a>
-</div>
+    </div>
+    <!-- Topbar End -->
 
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+        <a href="index.html" class="navbar-brand p-0">
+            <img src="img/buzzkidlogo.png" alt="Buzzkid Group Limited">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto py-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link">Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary ms-3">Contact Us</a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
-                    
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link" style="font-family: 'Ubuntu', sans-serif;">Home</a>                      
-                        <a href="services.html" class="nav-item nav-link active" style="font-family: 'Ubuntu', sans-serif;">Our Services</a>
-                        <a href="booking.html" class="nav-item nav-link" style="font-family: 'Ubuntu', sans-serif;">Booking</a>
-                        <a href="about.html" class="nav-item nav-link" style="font-family: 'Ubuntu', sans-serif;">About</a>
-                 
-                    </div>
-                  <a href="/docs/" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Download Booking Form</a>
-                </div>
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Services</li>
+                </ol>
             </nav>
         </div>
-        <!-- Navbar End -->
+    </div>
+    <!-- Page Header End -->
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s" style="font-family: 'Ubuntu', sans-serif;">Our Services</h1>
-          
+    <!-- Services Overview Start -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">OUR FOCUS</span>
+                <h2 class="mb-4">We Provide A Range of Sports Services and Solutions</h2>
+                <p class="mb-0">Discover a wide range of sports services and solutions that meet your needs. From professional swimming lessons to comprehensive athlete management, we offer specialized services designed to help individuals and organizations excel in the world of sports.</p>
             </div>
-        </div>
-        <!-- Header End -->
-
-
-        <!-- Services Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0" style="font-family: 'Ubuntu', sans-serif;">Services</h4>
-                    </div>
-                    <h1 class="display-3 mb-4" style="font-family: 'Ubuntu', sans-serif;">What We Offer</h1>
-                                     <!-- <p class="mb-0">We provide highly skilled expert and complaint staff to both the Hospitals and home care sector all over New Jersey. <br>Our care staff is professional, friendly, highly skilled and very well trained. We focus on continual nurse training and their development in providing health care.<br><br>We’re an approved supplier to the NHS and we hold contracts with NHS trusts, private hospitals, social service departments and local authorities nationwide.</p> -->
-                
-                </div>
-
-   
-
-                <div class="row g-4 justify-content-center">
-             
-
-                    
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0335.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Sports Data Analytics</h5>
-                                    <p class="mb-4">We provide valuable insight using Data analytics to help you Understand fan preferences and Acquire the right players. </p>
-                                    
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0335.JPG" class="img-fluid" alt="Sports Data Analytics">
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0392.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Business development</h5>
-                                    <p class="mb-4">We advice sports business leaders on how to profitably crown their business and resolve pressing strategic questions </p>
-                                    
-                                </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-bar"></i>
                             </div>
+                            <h4>Sports Data Analytics</h4>
+                            <p>We provide valuable insight using data analytics to help you understand fan preferences and acquire the right players. Our analytics services transform raw data into actionable strategies.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-primary me-2"></i> Performance Analysis</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Fan Engagement Insights</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Talent Identification</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0413.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Athlete Management</h5>
-                                    <p class="mb-4">Our custom approach to creating a personal experience helps us to assist, consult and advice athletes as Individuals.</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0529.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Player Pro</h5>
-                                    <p class="mb-4">Get insights about your players’ performance and team management Processes with real-time analytics.</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="booking.html">Book Now</a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Services End -->
-
-         <!--START CLIENTS-->
-        <div class="container" style="padding-bottom: 5%;">
-            <section class="customer-logos slider">
-                <div class="slide">
-                    <img decoding="async" src="img/client-1.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-2.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-3.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-4.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-5.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-7.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-8.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-9.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-10.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-11.PNG">
-                    </div>
-                    <div class="slide">
-                    <img decoding="async" src="img/client-12.PNG">
-                    </div>
-            </section>
-        </div>
-        <!--END CLIENTS-->
-  
-
-     
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4" style="font-family:'Ubuntu', sans-serif ; font-size: 16px;"></i>Buzzkid Group Ltd</h4>
-                            <p>A leading provider of Sports services such as Swimming, Skating, Chess, Ringo, Football, Tennis, and Basketbal services and is registered as a limited liability company in the republic of Kenya</p> 
-                            </p>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/easycareltd/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.linkedin.com/company/easycare-suppliers-ltd/"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://twitter.com/EasycareSupply"><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="mailto:info@easycareltd.co.uk"><i class="fas fa-envelope"></i></a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0392.JPG" class="img-fluid" alt="Business Development">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-briefcase"></i>
                             </div>
+                            <h4>Business Development</h4>
+                            <p>We advise sports business leaders on how to profitably grow their business and resolve pressing strategic questions. Our expertise helps organizations navigate the complex sports industry.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-primary me-2"></i> Strategic Planning</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Revenue Optimization</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Partnership Development</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white" style="font-family:'Ubuntu', sans-serif ; font-size: 16px;">Quick Links</h4>
-                            <a href="services.html"><i class="fa fa-user-md me-2"></i> Our Services</a>
-                            <a href="booking.html"><i class="fa fa-sticky-note me-2"></i> Bookings</a>
-                            <a href="about.html"><i class="fa fa-sitemap me-2"></i> About</a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0413.JPG" class="img-fluid" alt="Athlete Management">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Athlete Management</h4>
+                            <p>Our custom approach to creating a personal experience helps us to assist, consult and advise athletes as individuals. We provide comprehensive support for career development and performance.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-primary me-2"></i> Career Planning</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Contract Negotiation</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Personal Branding</li>
+                            </ul>
                         </div>
                     </div>
-     
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-black" style="font-family:'Ubuntu', sans-serif ; font-size: 16px;">Address</h4>
-                            <h6 style="font-family:'Ubuntu', sans-serif ; color: gray"></h6>
-                            <h6 style="font-family:'Ubuntu', sans-serif ; color: gray">Lantana Rd</h6>
-                            <h6 style="font-family:'Ubuntu', sans-serif ; color: gray">Nairobi</h6>
-                            <h6 style="font-family:'Ubuntu', sans-serif ; color: gray">info@buzzkidgroup.com</h6>
-                            <h6 class="mb-3" style="font-family:'Ubuntu', sans-serif ; color: gray"></i> +254 725 320 998 </h6>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0529.JPG" class="img-fluid" alt="Player Pro">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <h4>Player Pro</h4>
+                            <p>Get insights about your players' performance and team management processes with real-time analytics. Our Player Pro system helps coaches make data-driven decisions.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-primary me-2"></i> Performance Tracking</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Injury Prevention</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Development Planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0538.JPG" class="img-fluid" alt="Facility Construction">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <h4>Facility Construction</h4>
+                            <p>Our construction division creates model alignment of sports facilities according to your vision to maximize the impact on your business. We build state-of-the-art sports infrastructure.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-primary me-2"></i> Facility Design</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Construction Management</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Maintenance Planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/IMG_20231213_224603.jpg" class="img-fluid" alt="Event Management">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h4>Event Management</h4>
+                            <p>Unique activation opportunities that engage with target audiences, putting our clients at the heart of the event. We create memorable sports experiences that connect brands with fans.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-primary me-2"></i> Event Planning</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Sponsorship Activation</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Audience Engagement</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Buzzkid Group LTD</a>, All rights reserved.</span>
+    </section>
+    <!-- Services Overview End -->
+
+    <!-- Service Details Start -->
+    <section class="service-detail-section">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">COMPREHENSIVE SOLUTIONS</span>
+                <h2 class="mb-4">Why Choose Our Services?</h2>
+                <p class="mb-0">We offer end-to-end solutions designed to meet the unique needs of athletes, teams, and sports organizations.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="service-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Expert Coaching Team</h4>
+                            <p>Our coaches are highly trained professionals with years of experience in their respective sports. They're dedicated to helping you achieve your goals through personalized training programs.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                       <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> -->
+                    <div class="service-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Data-Driven Approach</h4>
+                            <p>We leverage advanced analytics and performance metrics to track progress and optimize training regimens. Our data-driven approach ensures measurable results and continuous improvement.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Safety First</h4>
+                            <p>Your safety is our top priority. All our facilities and equipment meet the highest safety standards, and our coaches are trained in emergency response and injury prevention.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Proven Results</h4>
+                            <p>With over 20 years of experience, we have a track record of success in developing athletes at all levels, from beginners to competitive professionals.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Partnership Approach</h4>
+                            <p>We work closely with our clients to understand their unique needs and goals, building long-term partnerships based on trust, transparency, and shared success.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Continuous Innovation</h4>
+                            <p>We stay at the forefront of sports science and training methodologies, continuously updating our programs to incorporate the latest research and best practices.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
+    </section>
+    <!-- Service Details End -->
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <!-- Process Section Start -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">OUR PROCESS</span>
+                <h2 class="mb-4">How We Work</h2>
+                <p class="mb-0">Our systematic approach ensures we deliver exceptional results for every client.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h4>Consultation</h4>
+                        <p>We begin with a thorough consultation to understand your goals, needs, and current abilities.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h4>Assessment</h4>
+                        <p>We conduct a comprehensive assessment to establish baseline metrics and identify areas for improvement.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h4>Custom Plan</h4>
+                        <p>We develop a personalized training or service plan tailored to your specific objectives and capabilities.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <h4>Implementation</h4>
+                        <p>We execute the plan with expert guidance, regular monitoring, and adjustments as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Process Section End -->
 
+    <!-- Clients Section Start -->
+    <section class="clients-section">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">OUR PARTNERS</span>
+                <h2 class="mb-4">Trusted by Leading Organizations</h2>
+                <p class="mb-0">We're proud to work with a diverse range of clients across the sports industry.</p>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-1.PNG" alt="Client 1">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-2.PNG" alt="Client 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-3.PNG" alt="Client 3">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-4.PNG" alt="Client 4">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-5.PNG" alt="Client 5">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-7.PNG" alt="Client 7">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-8.PNG" alt="Client 8">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-9.PNG" alt="Client 9">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-10.PNG" alt="Client 10">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-11.PNG" alt="Client 11">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-12.PNG" alt="Client 12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section End -->
+
+    <!-- CTA Section Start -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today to learn more about our services and how we can help you achieve your sports goals.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="booking.html" class="btn btn-light btn-lg">Book Now</a>
+                <a href="tel:+254725320998" class="btn btn-outline-light btn-lg">Call Us</a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Buzzkid Group LTD</h5>
+                    <p>A leading provider of Sports services such as Swimming, Skating, Chess, Ringo, Football, Tennis, and Basketball services and is registered as a limited liability company in the republic of Kenya.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <a href="services.html">Our Services</a>
+                    <a href="booking.html">Bookings</a>
+                    <a href="about.html">About Us</a>
+                    <a href="/docs/">Download Form</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Lantana Rd, Nairobi</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@buzzkidgroup.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +254 725 320 998</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Business Hours</h5>
+                    <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                    <p>Saturday: 8:00 AM - 6:00 PM</p>
+                    <p>Sunday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; <span id="currentYear"></span> Buzzkid Group LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
         
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-        <!-- Owl Carousel JS -->
-	    <script src="js/owl-carousel.js"></script>
-        
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-        <script>
-                    $(document).ready(function () {
-                        $(".customer-logos").slick({
-                            slidesToShow: 6,
-                            slidesToScroll: 1,
-                            autoplay: true,
-                            autoplaySpeed: 1500,
-                            arrows: false,
-                            dots: false,
-                            pauseOnHover: false,
-                        responsive: [
-                          {
-                            breakpoint: 768,
-                            settings: {
-                              slidesToShow: 4
-                            }
-                          },
-                          {
-                            breakpoint: 520,
-                            settings: {
-                              slidesToShow: 3
-                            }
-                          }
-                        ]
-                      });
-                    });
-        </script>
-        
-        
-
-    </body>
-
-
+        // Remove spinner when page is loaded
+        window.addEventListener('load', function() {
+            document.getElementById('spinner').style.display = 'none';
+        });
+    </script>
+</body>
 
 </html>

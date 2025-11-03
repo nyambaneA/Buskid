@@ -1,704 +1,975 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>BUZZKID GROUP LIMITED</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>BUZZKID GROUP LIMITED - Premier Swimming & Sports Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="swimming lessons, sports training, athlete management, Nairobi Kenya" name="keywords">
+    <meta content="Buzzkid Group Limited offers professional swimming lessons, sports training, and athlete management services in Nairobi, Kenya" name="description">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        <!--UBUNTU FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-            rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon (2).ico">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-<style>
-
-
-/* Slider */ 
-.slick-slide {
-  margin: 0px 10px;
-  
-} 
-.slick-slide img {
-  width: 100%;
-}
-</style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6053381914281982"
-     crossorigin="anonymous"></script>
-    </head>
-	<!-- Favicon -->
-        <link rel="icon" href="img/favicon (2).ico">
-
-<!--Start of Tawk.to Script-->
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/66e6271cea492f34bc13d40a/1i7pghj7v';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <!-- Modern CSS Styles -->
+    <style>
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #0052a3;
+            --secondary: #00a8e8;
+            --accent: #ff6b35;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #28a745;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .text-primary {
+            color: var(--primary) !important;
+        }
+        
+        .text-accent {
+            color: var(--accent) !important;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        
+        .bg-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        /* Header & Navigation */
+        .top-bar {
+            background-color: var(--dark);
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        
+        .top-bar a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .top-bar a:hover {
+            color: white;
+        }
+        
+        .navbar {
+            padding: 15px 0;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            transition: all 0.3s;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 8px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            color: var(--dark);
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary);
+            background-color: rgba(0, 102, 204, 0.05);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 85vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        }
+        
+        .hero-section .carousel-item {
+            height: 85vh;
+            min-height: 600px;
+        }
+        
+        .hero-section .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 2;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Section Styling */
+        .section-title {
+            margin-bottom: 50px;
+        }
+        
+        .section-title .sub-title {
+            display: inline-block;
+            background-color: rgba(0, 102, 204, 0.1);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        /* About Section */
+        .about-img {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-img img {
+            width: 100%;
+            transition: transform 0.5s;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-experience {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        /* Services Section */
+        .service-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            background: white;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-img {
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        /* Values Section */
+        .value-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: rgba(0, 102, 204, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 30px;
+        }
+        
+        /* Booking Section */
+        .booking-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            background: white;
+        }
+        
+        .booking-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .booking-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .booking-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .booking-card:hover .booking-img img {
+            transform: scale(1.1);
+        }
+        
+        .booking-content {
+            padding: 20px;
+        }
+        
+        /* Clients Section */
+        .clients-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .client-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .client-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .client-logo img {
+            max-width: 100%;
+            max-height: 60px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        
+        .client-logo:hover img {
+            filter: grayscale(0%);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 80px 0 0;
+        }
+        
+        .footer h5 {
+            color: white;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 991.98px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .navbar-collapse {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                margin-top: 15px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66e6271cea492f34bc13d40a/1i7pghj7v';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
+</head>
 
+<body>
 
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-orange" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
-
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-            <div class="row gx-0 align-items-center" style="height: 45px;">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+    <!-- Topbar Start -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
                     <div class="d-flex flex-wrap">
-                        <a href="#" class="text-light me-4" style="font-size: 13px;"><i class="fa fa-location-arrow text-orange me-2"></i>Kenya</a>
-                        <a Tel="+254 725 320 998" class="text-light me-4" style="font-size: 13px;"><i class="fa fa-mobile text-orange me-2"></i>+254 725 320 998</a>
-                        <a href="info@buzzkidgroup.com" class="text-light me-0" style="font-size: 13px;"><i class="fa fa-envelope text-orange me-2"></i>info@buzzkidgroup.com</a>
+                        <a href="#" class="me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Nairobi, Kenya</a>
+                        <a href="tel:+254725320998" class="me-4"><i class="fas fa-phone text-primary me-2"></i>+254 725 320 998</a>
+                        <a href="mailto:info@buzzkidgroup.com"><i class="fas fa-envelope text-primary me-2"></i>info@buzzkidgroup.com</a>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
+                <div class="col-md-4 text-md-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
+    </div>
+    <!-- Topbar End -->
 
-        <!-- Topbar End -->
-
-  
-
- <div class="d-flex align-items-center">
-  <a href="index.html" class="navbar-brand p-0">
-    <img class="logo img-fluid" src="img/buzzkidlogo.png" alt="Logo" style="height: 200px;">
-  </a>
-</div>
-
-<div class="container-fluid position-relative p-0">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+        <a href="index.html" class="navbar-brand p-0">
+            <img src="img/buzzkidlogo.png" alt="Buzzkid Group Limited">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto py-0">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active" style="font-family: 'Ubuntu', sans-serif;">Home</a>
+                    <a href="index.html" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link" style="font-family: 'Ubuntu', sans-serif;">Our Services</a>
+                    <a href="services.html" class="nav-link">Our Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="booking.html" class="nav-link" style="font-family: 'Ubuntu', sans-serif;">Bookings</a>
+                    <a href="booking.html" class="nav-link">Bookings</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link" style="font-family: 'Ubuntu', sans-serif;">About</a>
+                    <a href="about.html" class="nav-link">About</a>
                 </li>
             </ul>
-            <a href="/docs/" target="_blank" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Download Form</a>
-        </div>
-    </nav>
-</div>
-<div class="header-carousel owl-carousel">
-    <div class="header-carousel-item">
-        <img src="img/DSC_0335.JPG" class="img-fluid w-100" alt="Image">
-        <div class="carousel-caption">
-            <div class="carousel-caption-content p-3">
-                <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px; font-family: 'Ubuntu', sans-serif;">BUZZKID GROUP LIMITED</h5>
-                <h1 class="display-1 text-capitalize text-white mb-4" style="font-size: 40px; font-family: 'Ubuntu', sans-serif;">Leading Swim Company in Nairobi Kenya</h1>
-                <p class="mb-5 fs-5">Looking to start a swimming career ?  Buzzkid has made signiﬁcant strides in promoting sustainable life survival skills, with a particular focus on swimming. The company’s programs are designed to carter to individuals of all ages and abilities, offering a unique blend of physical activity and holistic wellness.</p>
-            </div>
+            <a href="contact.html" class="btn btn-primary ms-3">Contact Us</a>
         </div>
     </div>
-    <div class="header-carousel-item">
-        <img src="img/DSC_0342.JPG" class="img-fluid w-100" alt="Image">
-        <div class="carousel-caption">
-            <div class="carousel-caption-content p-3">
-                <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px; font-family: 'Ubuntu', sans-serif;">BUZZKID GROUP LIMITED</h5>
-                <h1 class="display-1 text-capitalize text-white mb-4" style="font-size: 40px; font-family: 'Ubuntu', sans-serif;">Athlete Management</h1>
-                <p class="mb-5 fs-5">BUZZKID GROUP LTD, Our custom approach to creating a personal experience helps us to assist, consult and advice athletes as Individuals.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="header-carousel-item">
-        <img src="img/DSC_0346.JPG" class="img-fluid w-100" alt="Image">
-        <div class="carousel-caption">
-            <div class="carousel-caption-content p-3">
-                <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px; font-family: 'Ubuntu', sans-serif;">BUZZKID GROUP LIMITED</h5>
-                <h1 class="display-1 text-capitalize text-white mb-4" style="font-size: 40px; font-family: 'Ubuntu', sans-serif;">We Create Champions</h1>
-                <p class="mb-5 fs-5"> honesty, openness and respect.
-                    We want to create something worth creating, that will endure the test of time. We do this by relentlessly focusing on our customers’ sucess through high-quality strategy, and planning for long-term
-                    </p>
-            </div>
-        </div>
-    </div>
-</div>
-        <!-- Navbar & Hero End -->
+</nav>
+<!-- Navbar End -->
 
-
-                <!-- About Start -->
-                <div class="container-fluid about bg-light py-5">
-                    <div class="container py-5">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
-                                <div class="about-img pb-5 ps-5">
-                                    <img src="img/DSC_0413.JPG" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
-                                    <div class="about-img-inner">
-                                        <img src="img/DSC_0421.JPG" class="img-fluid rounded-circle w-100 h-100" alt="Image">
-                                    </div>
-                                    <div class="about-experience" style="">20 + years experience</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
-                                <div class="section-title text-start mb-5">
-                                    <h4 class="sub-title pe-3 mb-0" style="font-family: 'Ubuntu', sans-serif;">About BUZZKID GROUP LTD</h4>
-                                    <h1 class="display-3 mb-4" style="font-family: 'Ubuntu', sans-serif;">We are Ready to Help Improve Your Swimming Skills.</h1>
-                                    <p class="mb-4">Buzzkids group limited is a leading sports And wellness-oriented ﬁrm based in Nairobi kenya. Established with a mission to Empower individuals through sports, Buzzkid has made signiﬁcant strides in promoting sustainable life survival skills, with a particular focus on swimming. The company’s programs are designed to carter to individuals of all ages and abilities, offering a unique blend of physical activity and holistic wellness.</p>
-                                    <div class="mb-4">
-                                        <p class="text-secondary"><i class="fa fa-check text-orange me-2"></i> Swimming </p>
-                                        <p class="text-secondary"><i class="fa fa-check text-orange me-2"></i> Skating</p>
-                                        <p class="text-secondary"><i class="fa fa-check text-orange me-2"></i> Football</p>
-                                        <p class="text-secondary"><i class="fa fa-check text-orange me-2"></i> Chess </p>
-                                        <p class="text-secondary"><i class="fa fa-check text-orange me-2"></i> Ringo</p>
-                                        <p class="text-secondary"><i class="fa fa-check text-orange me-2"></i>Basketball</p>
-                                        <p class="text-secondary"><i class="fa fa-check text-orange me-2"></i>Tennis</p>
-                                    </div>
-                                    <a href="about.html" class="btn btn-primary rounded-pill text-white py-3 px-5">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Hero Section Start -->
+    <div class="hero-section">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/DSC_0335.JPG" class="d-block w-100" alt="Swimming Training">
                 </div>
-                <!-- About End -->
-
-    
-        <!-- Feature Start -->
-        <div class="container-fluid feature py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0" style="font-family: 'Ubuntu', sans-serif;">OUR VALUES</h4>
-                    </div>
-                    <h1 class="display-3 mb-4" style="font-family: 'Ubuntu', sans-serif;">INNOVATE</h1>
-                    <p class="mb-0">We want to create something worth creating, that will endure the test of time. We do this by relentlessly focusing on our customers’ sucess through high-quality strategy, and planning for long-term By doing whatever it takes to enable our champions to be transformational leaders and their staff to be superstars. We continuously improve our services by viewing the business from a”Glass Half Empty’ perspective to intensely focus us on how we can operate more effectively.</p>
+                <div class="carousel-item">
+                    <img src="img/DSC_0342.JPG" class="d-block w-100" alt="Athlete Management">
                 </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-user-md fa-4x text-orange"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">PROACTIVITY</h5>
-                                    <p class="mb-0"> We continuously improve our services by viewing the business from "Glass Half Full perspective to itensely focus us on how we can operate more effectively</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-users fa-4x text-orange"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">RESULT</h5>
-                                    <p class="mb-0">By doing whatever it takes to enable our champions to be transformational leaders and their staff to be superstars</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-certificate fa-4x text-orange"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">HIGH QUALITY</h5>
-                                    <p class="mb-0">Our coaches are highly trained to deliver high standards of service</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-medkit fa-4x text-orange"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">TEAM WORK</h5>
-                                    <p class="mb-0">By communicating internally with honestly, openness, and respect.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-calendar fa-4x text-orange"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">24/7 SERVICES</h5>
-                                    <p class="mb-0">Here at Buzzkid Group Limited we work around the clock, 365 days a year, to ensure we exceed your expectaions </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-handshake fa-4x text-orange"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">WE DELIVER OUR PROMISES</h5>
-                                    <p class="mb-0">Our achievements demonstrate our commitment. We excel not only through what we say, but through what we do.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="img/DSC_0346.JPG" class="d-block w-100" alt="Creating Champions">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <!-- Feature End -->
-
-
-        <!-- Services Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0" style="font-family: 'Ubuntu', sans-serif;">OUR FOCUS</h4>
-                    </div>
-                    <h1 class="display-3 mb-4" style="font-family: 'Ubuntu', sans-serif;">We Provide A Range of Sports Services and Solutions</h1>
-                    <p class="mb-0">Discover a wide range of sports serices and solutions that meet your needs</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0463.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;"> Sports Data Analytics</h5>
-                                    <p class="mb-4">We provide valuable insight using Data analytics to help you Understand fan preferences and Acquire the right players.</p>
-                                    <a href="services.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0529.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Business development</h5>
-                                    <p class="mb-4">We advice sports business leaders on how to profitably crown their business and resolve pressing strategic questions</p>
-                                    <a href="services.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0538.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Athlete Management</h5>
-                                    <p class="mb-4">Our custom approach to creating a personal experience helps us to assist, consult and advice athletes as Individuals.</p>
-                                    <a href="services.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                   <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0593.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Player Pro</h5>
-                                    <p class="mb-4">Get insights about your players’ performance and team management Processes with real-time analytics.</p>
-                                    <a href="services.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/DSC_0538.JPG" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Facility Construction</h5>
-                                    <p class="mb-4">Our construction division creates Model alignment of sports facilities, according to your vision to Maximize the impact on your Business.</p>
-                                    <a href="services.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/IMG_20231213_224603.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4" style="font-family: 'Ubuntu', sans-serif;">Event Management</h5>
-                                    <p class="mb-4">unique activation Opportunities that engage with target Audiences, putting our clients at the heart Of the event.</p>
-                                    <a href="services.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p></p>
-                    <br>
-                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/docs/">Download Booking Form</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services End -->
-
-        <!-- Team Start -->
-        <!-- <div class="container-fluid team py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0" style="font-family: 'Ubuntu', sans-serif;">Meet our team</h4>
-                    </div>
-                    <h1 class="display-3 mb-4" style="font-family: 'Ubuntu', sans-serif;">The team behind the scenes at Easycare</h1>
-                    <p class="mb-0">These are the professionals making the smooth operations at EasyCare Supplies UK Ltd possible to make sure everyone is accommodated accordingly with our high quality services</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item rounded">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href="mailto:info@easycareltd.co.uk"><i class="fas fa-envelope"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-     
-                                <p class="mb-0">HR Expert</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item rounded">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/team-4.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href="mailto:info@easycareltd.co.uk"><i class="fas fa-envelope"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                       
-                                <p class="mb-0">HR Expert</p>
-                            </div>
-                        </div>
-                    </div>
-                  
-                    
-                </div>
-            </div>
-        </div> -->
-        <!-- Team End -->
-
-
-        <!-- Blog Start -->
-        <div class="container-fluid blog py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0" style="font-family: 'Ubuntu', sans-serif;">Swimming Lessons Bookings</h4>
-                    </div>
-                    <h1 class="display-3 mb-4" style="font-family:'Ubuntu', sans-serif ;">Book Your Lessons Today</h1>
-                    <p class="mb-0">Looking to start your swimming lessons today? Call Buzzkid based in Nairobi today for more information</p>
-
-                    <p>Would You Like To Start Swimming Lessons? We offer swimming lessons for kids, adults, schools, and corporate. Place your booking, we would love to hear from you.</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="blog-item rounded">
-                            <div class="blog-img">
-                                <img src="img/IMG_20231213_224603.jpg" class="img-fluid w-100" alt="Image">
-                            </div>
-                            <div class="blog-centent p-4">
-                                <div class="d-flex justify-content-between mb-4">
-                                   
-                                    <a href="#" class="text-muted"><span class="fa fa-map-marker-alt text-orange"></span> Nairobi</a>
-                                </div>
-                                <a href="booking.html" class="h4" style="font-family: 'Ubuntu', sans-serif; font-size: 15px;">Kids Swimming Lessons</a>
-                                <br>
-                                <br>
-                                
-                                <a href="booking.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Booking</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="blog-item rounded">
-                            <div class="blog-img">
-                                <img src="img/DSC_0463.JPG" class="img-fluid w-100" alt="Image">
-                            </div>
-                            <div class="blog-centent p-4">
-                                <div class="d-flex justify-content-between mb-4">
-                                   
-                                    <a href="booking.html" class="text-muted"><span class="fa fa-map-marker-alt text-orange"></span>Nairobi's Upper Hill</a>
-                                </div>
-                                <a href="#" class="h4" style="font-family: 'Ubuntu', sans-serif; font-size: 15px;">Adult and Kids Swim Lessons</a>
-                                <br>
-                                <br>
-
-
-                              <a href="booking.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Booking</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="blog-item rounded">
-                            <div class="blog-img">
-                                <img src="img/DSC_0593.JPG" class="img-fluid w-100" alt="Image">
-                            </div>
-                            <div class="blog-centent p-4">
-                                <div class="d-flex justify-content-between mb-4">
-                                   
-                                    <a href="booking.html" class="text-muted"><span class="fa fa-map-marker-alt text-orange"></span>Nairobi Thika Road</a>
-                                </div>
-                                <a href="#" class="h4" style="font-family: 'Ubuntu', sans-serif; font-size: 15px;">Kids and Adults Swim Lessons</a>
-                                <br>
-                                 <br>
-                             <a href="booking.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Booking</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
-
-        <!--START CLIENTS-->
-        <div class="container" style="padding-bottom: 5%;">
-            <section class="customer-logos slider">
-                <div class="slide">
-                <img decoding="async" src="img/client-1.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-2.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-3.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-4.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-5.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-7.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-8.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-9.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-10.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-11.PNG">
-                </div>
-                <div class="slide">
-                <img decoding="async" src="img/client-12.PNG">
-                </div>
-            </section>
-        </div>
-        <!--END CLIENTS-->
-
-
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4" style="font-family:'Ubuntu', sans-serif ; font-size: 16px;"></i>Buzzkid Group LTD</h4>
-                            <p>A leading provider of Sports services such as Swimming, Skating, Chess, Ringo, Football, Tennis, and Basketbal services and is registered as a limited liability company in the republic of Kenya</p> 
-                            </p>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white" style="font-family:'Ubuntu', sans-serif ; font-size: 16px;">Quick Links</h4>
-                            <a href="services.html"><i class="fa fa-user-md me-2"></i> Our Services</a>
-                            <a href="booking.html"><i class="fa fa-sticky-note me-2"></i> Bookings</a>
-                            <a href="about.html"><i class="fa fa-sitemap me-2"></i> About</a>
-                        </div>
-                    </div>
-     
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-black" style="font-family:'Ubuntu', sans-serif ; font-size: 16px;">Address</h4>
-                            <h6 style="font-family:'Ubuntu', sans-serif ; color: gray"></h6>
-                            <h6 style="font-family:'Ubuntu', sans-serif ; color: gray">Lantana Rd</h6>
-                            <h6 style="font-family:'Ubuntu', sans-serif ; color: gray">Nairobi</h6>
-                            <h6 style="font-family:'Ubuntu', sans-serif ; color: gray">info@buzzkidgroup.com</h6>
-                            <h6 class="mb-3" style="font-family:'Ubuntu', sans-serif ; color: gray"></i> +254 725 320 998 </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
         
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
+        <div class="hero-content">
             <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Buzzkid Group LTD</a>, All rights reserved.</span>
+                <h1 class="display-3 mb-4">Leading Swim Company in Nairobi Kenya</h1>
+                <p class="lead mb-5">Buzzkid has made significant strides in promoting sustainable life survival skills, with a particular focus on swimming. Our programs cater to individuals of all ages and abilities, offering a unique blend of physical activity and holistic wellness.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="booking.html" class="btn btn-primary btn-lg">Book Now</a>
+                    <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-img">
+                        <img src="img/DSC_0413.JPG" class="img-fluid rounded" alt="About Buzzkid">
+                        <div class="about-experience">20+ Years Experience</div>
                     </div>
-                    <div class="col-md-6 text-center text-md-end text-white">
-                       
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title text-start mb-5">
+                        <span class="sub-title">About BUZZKID GROUP LTD</span>
+                        <h2 class="mb-4">We Are Ready to Help Improve Your Swimming Skills</h2>
+                        <p class="mb-4">Buzzkids Group Limited is a leading sports and wellness-oriented firm based in Nairobi, Kenya. Established with a mission to empower individuals through sports, Buzzkid has made significant strides in promoting sustainable life survival skills, with a particular focus on swimming.</p>
+                        <div class="row mb-4">
+                            <div class="col-sm-6">
+                                <p class="mb-2"><i class="fas fa-check text-primary me-2"></i> Swimming</p>
+                                <p class="mb-2"><i class="fas fa-check text-primary me-2"></i> Skating</p>
+                                <p class="mb-2"><i class="fas fa-check text-primary me-2"></i> Football</p>
+                                <p class="mb-2"><i class="fas fa-check text-primary me-2"></i> Chess</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-2"><i class="fas fa-check text-primary me-2"></i> Ringo</p>
+                                <p class="mb-2"><i class="fas fa-check text-primary me-2"></i> Basketball</p>
+                                <p class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tennis</p>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
+    </section>
+    <!-- About Section End -->
 
-        <!-- Back to Top -->
-        <!-- <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   -->
+    <!-- Values Section Start -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">OUR VALUES</span>
+                <h2 class="mb-4">INNOVATE</h2>
+                <p class="mb-0">We want to create something worth creating, that will endure the test of time. We do this by relentlessly focusing on our customers' success through high-quality strategy and planning for long-term growth.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h5>PROACTIVITY</h5>
+                        <p>We continuously improve our services by viewing the business from a "Glass Half Full" perspective to intensely focus us on how we can operate more effectively.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5>RESULTS</h5>
+                        <p>By doing whatever it takes to enable our champions to be transformational leaders and their staff to be superstars.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h5>HIGH QUALITY</h5>
+                        <p>Our coaches are highly trained to deliver high standards of service and ensure exceptional results for all our clients.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5>TEAM WORK</h5>
+                        <p>By communicating internally with honesty, openness, and respect, we foster a collaborative environment that drives success.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5>24/7 SERVICES</h5>
+                        <p>Here at Buzzkid Group Limited we work around the clock, 365 days a year, to ensure we exceed your expectations.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h5>WE DELIVER OUR PROMISES</h5>
+                        <p>Our achievements demonstrate our commitment. We excel not only through what we say, but through what we do.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Values Section End -->
 
+    <!-- Services Section Start -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">OUR FOCUS</span>
+                <h2 class="mb-4">We Provide A Range of Sports Services and Solutions</h2>
+                <p class="mb-0">Discover a wide range of sports services and solutions that meet your needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0463.JPG" class="img-fluid" alt="Sports Data Analytics">
+                        </div>
+                        <div class="service-content">
+                            <h5>Sports Data Analytics</h5>
+                            <p class="mb-4">We provide valuable insight using data analytics to help you understand fan preferences and acquire the right players.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0529.JPG" class="img-fluid" alt="Business Development">
+                        </div>
+                        <div class="service-content">
+                            <h5>Business Development</h5>
+                            <p class="mb-4">We advise sports business leaders on how to profitably grow their business and resolve pressing strategic questions.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0538.JPG" class="img-fluid" alt="Athlete Management">
+                        </div>
+                        <div class="service-content">
+                            <h5>Athlete Management</h5>
+                            <p class="mb-4">Our custom approach to creating a personal experience helps us to assist, consult and advise athletes as individuals.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0593.JPG" class="img-fluid" alt="Player Pro">
+                        </div>
+                        <div class="service-content">
+                            <h5>Player Pro</h5>
+                            <p class="mb-4">Get insights about your players' performance and team management processes with real-time analytics.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/DSC_0538.JPG" class="img-fluid" alt="Facility Construction">
+                        </div>
+                        <div class="service-content">
+                            <h5>Facility Construction</h5>
+                            <p class="mb-4">Our construction division creates model alignment of sports facilities according to your vision to maximize the impact on your business.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="img/IMG_20231213_224603.jpg" class="img-fluid" alt="Event Management">
+                        </div>
+                        <div class="service-content">
+                            <h5>Event Management</h5>
+                            <p class="mb-4">Unique activation opportunities that engage with target audiences, putting our clients at the heart of the event.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKbMowXoWyY3ZpzBnjaul2OtKXXaWnUpOQsqB4pIUAX4YKWg/viewform" target="_blank" class="btn btn-primary btn-lg">Register Now</a>
+</div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Booking Section Start -->
+<section class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5">
+            <span class="sub-title">Swimming Lessons Bookings</span>
+            <h2 class="mb-4">Book Your Lessons Today</h2>
+            <p class="mb-4">Looking to start your swimming lessons today? Call Buzzkid based in Nairobi today for more information.</p>
+            <p>Would You Like To Start Swimming Lessons? We offer swimming lessons for kids, adults, schools, and corporate. Place your booking, we would love to hear from you.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="booking-card">
+                    <div class="booking-img">
+                        <img src="img/IMG_20231213_224603.jpg" class="img-fluid" alt="Kids Swimming Lessons">
+                    </div>
+                    <div class="booking-content">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-muted"><i class="fas fa-map-marker-alt text-primary me-1"></i> Nairobi</span>
+                        </div>
+                        <h5>Kids Swimming Lessons</h5>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKbMowXoWyY3ZpzBnjaul2OtKXXaWnUpOQsqB4pIUAX4YKWg/viewform" target="_blank" class="btn btn-primary mt-3">Register Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="booking-card">
+                    <div class="booking-img">
+                        <img src="img/DSC_0463.JPG" class="img-fluid" alt="Adult and Kids Swim Lessons">
+                    </div>
+                    <div class="booking-content">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-muted"><i class="fas fa-map-marker-alt text-primary me-1"></i> Nairobi's Upper Hill</span>
+                        </div>
+                        <h5>Adult and Kids Swim Lessons</h5>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKbMowXoWyY3ZpzBnjaul2OtKXXaWnUpOQsqB4pIUAX4YKWg/viewform" target="_blank" class="btn btn-primary mt-3">Register Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="booking-card">
+                    <div class="booking-img">
+                        <img src="img/DSC_0593.JPG" class="img-fluid" alt="Kids and Adults Swim Lessons">
+                    </div>
+                    <div class="booking-content">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-muted"><i class="fas fa-map-marker-alt text-primary me-1"></i> Nairobi Thika Road</span>
+                        </div>
+                        <h5>Kids and Adults Swim Lessons</h5>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKbMowXoWyY3ZpzBnjaul2OtKXXaWnUpOQsqB4pIUAX4YKWg/viewform" target="_blank" class="btn btn-primary mt-3">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add a prominent CTA button below the booking cards -->
+        <div class="text-center mt-5">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKbMowXoWyY3ZpzBnjaul2OtKXXaWnUpOQsqB4pIUAX4YKWg/viewform" target="_blank" class="btn btn-primary btn-lg me-3">Register for Swimming Lessons</a>
+            <a href="tel:+254725320998" class="btn btn-outline-primary btn-lg">Call Us Now</a>
+        </div>
+    </div>
+</section>
+<!-- Booking Section End -->
+
+    <!-- Clients Section Start -->
+    <section class="clients-section">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">OUR PARTNERS</span>
+                <h2 class="mb-4">Trusted by Leading Organizations</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-1.PNG" alt="Client 1">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-2.PNG" alt="Client 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-3.PNG" alt="Client 3">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-4.PNG" alt="Client 4">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-5.PNG" alt="Client 5">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-7.PNG" alt="Client 7">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-8.PNG" alt="Client 8">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-9.PNG" alt="Client 9">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-10.PNG" alt="Client 10">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-11.PNG" alt="Client 11">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo">
+                        <img src="img/client-12.PNG" alt="Client 12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section End -->
+
+    <!-- Footer Start -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h5>Buzzkid Group LTD</h5>
+                <p>A leading provider of Sports services such as Swimming, Skating, Chess, Ringo, Football, Tennis, and Basketball services and is registered as a limited liability company in the republic of Kenya.</p>
+                <div class="social-icons mt-4">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Quick Links</h5>
+                <a href="services.html">Our Services</a>
+                <a href="booking.html">Bookings</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5>Contact Info</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Lantana Rd, Nairobi</p>
+                <p><i class="fas fa-envelope me-2"></i> info@buzzkidgroup.com</p>
+                <p><i class="fas fa-phone me-2"></i> +254 725 320 998</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5>Business Hours</h5>
+                <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                <p>Saturday: 8:00 AM - 6:00 PM</p>
+                <p>Sunday: 9:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p class="mb-0">&copy; <span id="currentYear"></span> Buzzkid Group LTD. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
         
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        // Initialize carousel
+        var myCarousel = document.querySelector('#header-carousel')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 5000,
+            wrap: true
+        })
         
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-        <script>
-                    $(document).ready(function () {
-                        $(".customer-logos").slick({
-                            slidesToShow: 6,
-                            slidesToScroll: 1,
-                            autoplay: true,
-                            autoplaySpeed: 1500,
-                            arrows: false,
-                            dots: false,
-                            pauseOnHover: false,
-                        responsive: [
-                          {
-                            breakpoint: 768,
-                            settings: {
-                              slidesToShow: 4
-                            }
-                          },
-                          {
-                            breakpoint: 520,
-                            settings: {
-                              slidesToShow: 3
-                            }
-                          }
-                        ]
-                      });
-                    });
-        </script>
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-        
-    </body>
+        // Remove spinner when page is loaded
+        window.addEventListener('load', function() {
+            document.getElementById('spinner').style.display = 'none';
+        });
+    </script>
+</body>
 
 </html>

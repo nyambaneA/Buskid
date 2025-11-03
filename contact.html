@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us - Buzzkid Group Limited | Nairobi Kenya</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="contact buzzkid, swimming lessons inquiry, sports training Nairobi, get in touch" name="keywords">
+    <meta content="Contact Buzzkid Group Limited for swimming lessons, sports training, and athlete management services in Nairobi, Kenya. Get in touch today!" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon (2).ico">
+
+    <!-- Modern CSS Styles -->
+    <style>
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #0052a3;
+            --secondary: #00a8e8;
+            --accent: #ff6b35;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #28a745;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .text-primary {
+            color: var(--primary) !important;
+        }
+        
+        .text-accent {
+            color: var(--accent) !important;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        
+        .bg-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        /* Header & Navigation */
+        .top-bar {
+            background-color: var(--dark);
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        
+        .top-bar a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .top-bar a:hover {
+            color: white;
+        }
+        
+        .navbar {
+            padding: 15px 0;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            transition: all 0.3s;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 8px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            color: var(--dark);
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary);
+            background-color: rgba(0, 102, 204, 0.05);
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/DSC_0335.JPG');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 80px;
+            color: white;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            justify-content: center;
+        }
+        
+        .breadcrumb-item a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: white;
+        }
+        
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Section Styling */
+        .section-title {
+            margin-bottom: 50px;
+        }
+        
+        .section-title .sub-title {
+            display: inline-block;
+            background-color: rgba(0, 102, 204, 0.1);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        /* Contact Cards */
+        .contact-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary);
+        }
+        
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 102, 204, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 30px;
+            margin: 0 auto 20px;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 12px 15px;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.1);
+        }
+        
+        /* Info Section */
+        .info-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .info-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--light);
+            padding: 80px 0;
+        }
+        
+        .cta-card {
+            background: white;
+            border-radius: 15px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 80px 0 0;
+        }
+        
+        .footer h5 {
+            color: white;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 991.98px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .navbar-collapse {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                margin-top: 15px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.75rem;
+            }
+            
+            .contact-form {
+                padding: 30px 20px;
+            }
+            
+            .cta-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66e6271cea492f34bc13d40a/1i7pghj7v';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Nairobi, Kenya</a>
+                        <a href="tel:+254725320998" class="me-4"><i class="fas fa-phone text-primary me-2"></i>+254 725 320 998</a>
+                        <a href="mailto:info@buzzkidgroup.com"><i class="fas fa-envelope text-primary me-2"></i>info@buzzkidgroup.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/buzzkidlogo.png" alt="Buzzkid Group Limited">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto py-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="booking.html" class="nav-link">Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKbMowXoWyY3ZpzBnjaul2OtKXXaWnUpOQsqB4pIUAX4YKWg/viewform" target="_blank" class="btn btn-primary ms-3">Register Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Contact Info Section Start -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">GET IN TOUCH</span>
+                <h2 class="mb-4">We'd Love to Hear From You</h2>
+                <p class="mb-0">Have questions about our swimming lessons or sports services? Reach out to us through any of the following channels.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Our Location</h4>
+                        <p>Lantana Rd, Nairobi, Kenya</p>
+                        <a href="https://maps.google.com/?q=Lantana+Rd+Nairobi+Kenya" target="_blank" class="btn btn-outline-primary mt-3">Get Directions</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone Number</h4>
+                        <p>+254 725 320 998</p>
+                        <p>+254 113 709 867</p>
+                        <a href="tel:+254725320998" class="btn btn-outline-primary mt-3">Call Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Address</h4>
+                        <p>info@buzzkidgroup.com</p>
+                        <a href="mailto:info@buzzkidgroup.com" class="btn btn-outline-primary mt-3">Send Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Info Section End -->
+
+    <!-- Contact Form & Info Section Start -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <div class="section-title text-start mb-4">
+                            <span class="sub-title">SEND US A MESSAGE</span>
+                            <h2 class="mb-3">Ready to Get Started?</h2>
+                            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                        </div>
+                        
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="section-title text-start mb-4">
+                        <span class="sub-title">QUICK REGISTRATION</span>
+                        <h3 class="mb-3">Register for Swimming Lessons</h3>
+                    </div>
+                    
+                    <div class="bg-white rounded-3 p-4 shadow-sm mb-4">
+                        <h5 class="text-primary mb-3">Direct Registration</h5>
+                        <p class="mb-4">Ready to start your swimming journey? Register directly through our online form.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKbMowXoWyY3ZpzBnjaul2OtKXXaWnUpOQsqB4pIUAX4YKWg/viewform" target="_blank" class="btn btn-primary w-100 mb-3">Register Online</a>
+                    </div>
+                    
+                    <div class="bg-white rounded-3 p-4 shadow-sm">
+                        <h5 class="text-primary mb-3">Business Hours</h5>
+                        <div class="mb-3">
+                            <strong>Monday - Friday:</strong><br>
+                            8:00 AM - 8:00 PM
+                        </div>
+                        <div class="mb-3">
+                            <strong>Saturday:</strong><br>
+                            8:00 AM - 6:00 PM
+                        </div>
+                        <div>
+                            <strong>Sunday:</strong><br>
+                            9:00 AM - 5:00 PM
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form & Info Section End -->
+
+    <!-- Pool Locations Info Start -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <span class="sub-title">OUR LOCATIONS</span>
+                <h2 class="mb-4">Swimming Pools Across Nairobi</h2>
+                <p class="mb-0">We offer swimming lessons at multiple convenient locations throughout Nairobi</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-card">
+                        <h5>HillPark Hotel Upperhill</h5>
+                        <p class="text-muted">Professional swimming lessons in a premium hotel setting</p>
+                        <a href="booking.html" class="btn btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-card">
+                        <h5>Woodmere Apartments Kilimani</h5>
+                        <p class="text-muted">Modern pool facility in a residential setting</p>
+                        <a href="booking.html" class="btn btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-card">
+                        <h5>Hermosa Karen</h5>
+                        <p class="text-muted">Luxurious pool facility in the serene Karen area</p>
+                        <a href="booking.html" class="btn btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pool Locations Info End -->
+
+    <!-- CTA Section Start -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="mb-4">Start Your Swimming Journey Today</h2>
+                <p class="mb-4 lead">Join hundreds of satisfied clients who have improved their swimming skills with our expert coaching. Whether you're a beginner or looking to enhance your skills, we have the perfect program for you.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKbMowXoWyY3ZpzBnjaul2OtKXXaWnUpOQsqB4pIUAX4YKWg/viewform" target="_blank" class="btn btn-primary btn-lg">Register Now</a>
+                    <a href="tel:+254725320998" class="btn btn-outline-primary btn-lg">Call Us</a>
+                    <a href="booking.html" class="btn btn-outline-primary btn-lg">View Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Buzzkid Group LTD</h5>
+                    <p>A leading provider of Sports services such as Swimming, Skating, Chess, Ringo, Football, Tennis, and Basketball services and is registered as a limited liability company in the republic of Kenya.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <a href="services.html">Our Services</a>
+                    <a href="booking.html">Bookings</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Lantana Rd, Nairobi</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@buzzkidgroup.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +254 725 320 998</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Business Hours</h5>
+                    <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                    <p>Saturday: 8:00 AM - 6:00 PM</p>
+                    <p>Sunday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; <span id="currentYear"></span> Buzzkid Group LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Remove spinner when page is loaded
+        window.addEventListener('load', function() {
+            document.getElementById('spinner').style.display = 'none';
+        });
+
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
